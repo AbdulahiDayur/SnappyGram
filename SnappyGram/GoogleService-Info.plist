@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>322224701331-ia4sj20kbcquh4rf7h2hkdrc6knflmmb.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.322224701331-ia4sj20kbcquh4rf7h2hkdrc6knflmmb</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD_rO1ov_SYJHgdLU77Frqap2rQrcNcqdM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>322224701331</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.aDayur.SnappyGram</string>
+	<key>PROJECT_ID</key>
+	<string>snappygram-adafe</string>
+	<key>STORAGE_BUCKET</key>
+	<string>snappygram-adafe.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:322224701331:ios:96b5edf71d4e15f9d67266</string>
+</dict>
+</plist>
