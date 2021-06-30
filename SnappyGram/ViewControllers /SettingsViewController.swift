@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SettingsViewController: UIViewController {
 
@@ -18,6 +19,18 @@ class SettingsViewController: UIViewController {
 
     @IBAction func signOutTapped(_ sender: Any) {
         
+        do {
+            
+            // sign out user and clear storage
+            try Auth.auth().signOut()
+            LocalStorageService.clearUser()
+        
+            // Transition back to authentication flow
+            let loginNavVC = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.loginNavController)
+            
+        } catch {
+            
+        }
     }
     
 
