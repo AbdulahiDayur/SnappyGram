@@ -10,7 +10,7 @@ import FirebaseFirestore
 
 class UserService {
     
-    static func createProfile(userId: String, username: String){
+    static func createProfile(userId: String, username: String, completion: @escaping (PhotoUser?) -> Void) {
         
         let profileData = ["username": username]
         
@@ -21,9 +21,15 @@ class UserService {
             
             if error == nil {
                 // Profile successfully created
+                var u = PhotoUser()
+                u.userName = username
+                u.userId = userId
+                
+                completion(u)
                 
             } else {
                 // something went wrong
+                completion(nil)
                 
             }
         }
