@@ -34,4 +34,12 @@ class LocalStorageService {
         
         return nil
     }
+    
+    static func clearUser() {
+        let defaults = UserDefaults.standard
+        
+        // Clear the values for the keys
+        defaults.set(nil, forKey: Constants.LocalStorage.userIdKey)
+        defaults.set(nil, forKey: Constants.LocalStorage.usernameKey)
+    }
 }
