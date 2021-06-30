@@ -18,4 +18,20 @@ class LocalStorageService {
         defaults.set(userId, forKey: Constants.LocalStorage.userIdKey)
         defaults.set(username, forKey: Constants.LocalStorage.usernameKey)
     }
+    
+    static func loadUser() -> PhotoUser? {
+        
+        let defaults = UserDefaults.standard
+        
+        // Get username and id
+        let userId = defaults.value(forKey: Constants.LocalStorage.userIdKey) as? String
+        let username = defaults.value(forKey: Constants.LocalStorage.usernameKey) as? String
+        
+        // return saved user
+        if userId != nil && username != nil {
+            return PhotoUser(userId: userId, userName: username)
+        }
+        
+        return nil
+    }
 }
