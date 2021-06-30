@@ -8,7 +8,6 @@
 import Foundation
 
 struct PhotoUser {
-    var userID: String?
+    var userId: String?
     var userName: String?
-    
 }
