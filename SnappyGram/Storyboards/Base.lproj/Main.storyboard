@@ -86,7 +86,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="bUI-3o-OqH"/>
                     <connections>
-                        <outlet property="usernameTextField" destination="6WC-06-Non" id="1rO-Bz-16F"/>
+                        <outlet property="usernameTextField" destination="hmi-pN-DLz" id="cMw-aH-hlL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TGZ-hi-F7X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
