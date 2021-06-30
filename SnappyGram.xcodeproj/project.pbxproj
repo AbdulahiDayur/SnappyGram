@@ -10,6 +10,7 @@
 		0FB8191B268A427E008830FC /* PhotoUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB8191A268A427E008830FC /* PhotoUser.swift */; };
 		0FB8191E268A4397008830FC /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB8191D268A4397008830FC /* UserService.swift */; };
 		0FB81921268A8FD7008830FC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB81920268A8FD7008830FC /* Constants.swift */; };
+		0FB81924268D1169008830FC /* LocalStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB81923268D1169008830FC /* LocalStorageService.swift */; };
 		0FE214572686F12400F0D589 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE214562686F12400F0D589 /* AppDelegate.swift */; };
 		0FE214592686F12400F0D589 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE214582686F12400F0D589 /* SceneDelegate.swift */; };
 		0FE2145E2686F12400F0D589 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FE2145C2686F12400F0D589 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 		0FB8191A268A427E008830FC /* PhotoUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoUser.swift; sourceTree = "<group>"; };
 		0FB8191D268A4397008830FC /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		0FB81920268A8FD7008830FC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0FB81923268D1169008830FC /* LocalStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageService.swift; sourceTree = "<group>"; };
 		0FE214532686F12400F0D589 /* SnappyGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnappyGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE214562686F12400F0D589 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FE214582686F12400F0D589 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				0FB8191D268A4397008830FC /* UserService.swift */,
+				0FB81923268D1169008830FC /* LocalStorageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				0FE214B12687BE0C00F0D589 /* CameraViewController.swift in Sources */,
 				0FE214592686F12400F0D589 /* SceneDelegate.swift in Sources */,
 				0FE214AE2686FC9100F0D589 /* SettingsViewController.swift in Sources */,
+				0FB81924268D1169008830FC /* LocalStorageService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

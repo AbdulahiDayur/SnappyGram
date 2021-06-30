@@ -10,7 +10,7 @@ import FirebaseAuth
 
 class CreateProfileViewController: UIViewController {
     
-    @IBOutlet var usernameTextField: UILabel!
+    @IBOutlet var usernameTextField: UITextField!
     
 
     override func viewDidLoad() {
