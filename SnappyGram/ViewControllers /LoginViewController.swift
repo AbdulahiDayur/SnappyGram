@@ -40,7 +40,39 @@ class LoginViewController: UIViewController {
 extension LoginViewController: FUIAuthDelegate {
     
     func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?) {
-        <#code#>
+        
+        if error != nil {
+            return
+        }
+        
+        let user = authDataResult?.user
+        // Check on the database side if user has a profile
+        
+        if let user = user {
+            
+            UserService.retrieveProfile(userId: user.uid) { (user) in
+                
+                // If not, go to create profile view controller
+                if user == nil {
+                    self.performSegue(withIdentifier: Constants.Storyboard.profileSegue, sender: self)
+                    
+                } else {
+                    
+                    // If so, go to tab bar controller; create an instance
+                    let tabBarVC = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.tabBarController)
+                    
+                    guard tabBarVC != nil else {
+                        return
+                    }
+                    
+                    // Set it as the root view controller of the window
+                    self.view.window?.rootViewController = tabBarVC
+                    self.view.window?.makeKeyAndVisible()
+                    
+                }
+            }
+
+        }
     }
     
 }
