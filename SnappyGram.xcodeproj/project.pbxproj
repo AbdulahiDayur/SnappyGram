@@ -11,6 +11,7 @@
 		0FB8191E268A4397008830FC /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB8191D268A4397008830FC /* UserService.swift */; };
 		0FB81921268A8FD7008830FC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB81920268A8FD7008830FC /* Constants.swift */; };
 		0FB81924268D1169008830FC /* LocalStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB81923268D1169008830FC /* LocalStorageService.swift */; };
+		0FB81927268E324F008830FC /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB81926268E324F008830FC /* MainTabBarController.swift */; };
 		0FE214572686F12400F0D589 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE214562686F12400F0D589 /* AppDelegate.swift */; };
 		0FE214592686F12400F0D589 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE214582686F12400F0D589 /* SceneDelegate.swift */; };
 		0FE2145E2686F12400F0D589 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FE2145C2686F12400F0D589 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 		0FB8191D268A4397008830FC /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		0FB81920268A8FD7008830FC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0FB81923268D1169008830FC /* LocalStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageService.swift; sourceTree = "<group>"; };
+		0FB81926268E324F008830FC /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		0FE214532686F12400F0D589 /* SnappyGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnappyGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE214562686F12400F0D589 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FE214582686F12400F0D589 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				0FE214AA2686FBFB00F0D589 /* FeedViewController.swift */,
 				0FE214AD2686FC9100F0D589 /* SettingsViewController.swift */,
 				0FE214B02687BE0C00F0D589 /* CameraViewController.swift */,
+				0FB81926268E324F008830FC /* MainTabBarController.swift */,
 			);
 			path = "ViewControllers ";
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			files = (
 				0FE214A82686F8FF00F0D589 /* CreateProfileViewController.swift in Sources */,
 				0FE214A32686F89300F0D589 /* LoginViewController.swift in Sources */,
+				0FB81927268E324F008830FC /* MainTabBarController.swift in Sources */,
 				0FB8191E268A4397008830FC /* UserService.swift in Sources */,
 				0FE214AB2686FBFB00F0D589 /* FeedViewController.swift in Sources */,
 				0FB8191B268A427E008830FC /* PhotoUser.swift in Sources */,
