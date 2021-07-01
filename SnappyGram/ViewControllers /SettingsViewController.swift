@@ -28,6 +28,9 @@ class SettingsViewController: UIViewController {
             // Transition back to authentication flow
             let loginNavVC = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.loginNavController)
             
+            self.view.window?.rootViewController = loginNavVC
+            self.view.window?.makeKeyAndVisible()
+            
         } catch {
             
         }
