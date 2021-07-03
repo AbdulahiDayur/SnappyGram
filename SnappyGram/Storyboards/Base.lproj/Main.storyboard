@@ -115,7 +115,7 @@
                             <constraint firstItem="PXE-eS-jMW" firstAttribute="leading" secondItem="j5S-Hm-rgB" secondAttribute="leading" id="usG-W1-OCM"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Feed" id="Hxb-Ph-kcf"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Feed" id="Hxb-Ph-kcf"/>
                     <connections>
                         <outlet property="tableView" destination="PXE-eS-jMW" id="g1Q-41-HTj"/>
                     </connections>
@@ -134,7 +134,7 @@
                         <viewLayoutGuide key="safeArea" id="hag-XB-Q02"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Add" id="tGI-Xo-y8B"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="Add" id="tGI-Xo-y8B"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dBy-Fa-yHl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -163,16 +163,16 @@
                             <constraint firstItem="zes-Wi-i9E" firstAttribute="centerX" secondItem="XMB-a8-WIP" secondAttribute="centerX" id="lnb-Pr-jre"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" id="Z18-qG-0EE"/>
+                    <tabBarItem key="tabBarItem" tag="3" title="Settings" id="Z18-qG-0EE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u8U-0W-8wk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2266.666666666667" y="1568.9732142857142"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="YOR-BL-EJ7">
             <objects>
-                <tabBarController storyboardIdentifier="mainTabBarController" id="Hgr-MV-Bgd" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="mainTabBarController" id="Hgr-MV-Bgd" customClass="MainTabBarController" customModule="SnappyGram" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4Tt-2e-h9o">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
