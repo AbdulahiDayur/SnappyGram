@@ -131,10 +131,44 @@
                     <view key="view" contentMode="scaleToFill" id="N1a-Uc-rHV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="71" translatesAutoresizingMaskIntoConstraints="NO" id="H3n-Hq-A5D">
+                                <rect key="frame" x="20" y="350" width="374" height="196.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Complete" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wta-gM-sUi">
+                                        <rect key="frame" x="120.5" y="0.0" width="133" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1oM-Ze-ijQ">
+                                        <rect key="frame" x="20" y="91.5" width="334" height="4"/>
+                                    </progressView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PC-94-wB1">
+                                        <rect key="frame" x="148" y="166.5" width="78" height="30"/>
+                                        <state key="normal" title="Go To Feed"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="1oM-Ze-ijQ" firstAttribute="leading" secondItem="H3n-Hq-A5D" secondAttribute="leading" constant="20" id="PSv-FR-8ny"/>
+                                    <constraint firstAttribute="trailing" secondItem="1oM-Ze-ijQ" secondAttribute="trailing" constant="20" id="aSa-Ws-bQA"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hag-XB-Q02"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="H3n-Hq-A5D" firstAttribute="centerY" secondItem="N1a-Uc-rHV" secondAttribute="centerY" id="0Nn-G6-I1V"/>
+                            <constraint firstItem="hag-XB-Q02" firstAttribute="trailing" secondItem="H3n-Hq-A5D" secondAttribute="trailing" constant="20" id="CEf-fN-OAD"/>
+                            <constraint firstItem="H3n-Hq-A5D" firstAttribute="leading" secondItem="hag-XB-Q02" secondAttribute="leading" constant="20" id="dsG-bu-q35"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" tag="2" title="Add" id="tGI-Xo-y8B"/>
+                    <connections>
+                        <outlet property="doneButton" destination="1PC-94-wB1" id="18l-0c-Qmz"/>
+                        <outlet property="progressBar" destination="1oM-Ze-ijQ" id="m7C-67-AVA"/>
+                        <outlet property="progressLabel" destination="wta-gM-sUi" id="HJC-hv-Cgi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dBy-Fa-yHl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
