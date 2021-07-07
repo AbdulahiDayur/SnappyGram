@@ -16,7 +16,7 @@ struct Photo {
     var date: String?
     var url: String?
     
-    init?(snapshot: QueryDocumentSnapshot) {
+    init? (snapshot: QueryDocumentSnapshot) {
         
         // Parse the data out
         let data = snapshot.data()
@@ -30,6 +30,13 @@ struct Photo {
         if photoId == nil || userId == nil || username == nil || date == nil || url == nil {
             return nil
         }
+        
+        self.photoId = photoId
+        self.byId = photoId
+        self.byUsername = username
+        self.date = date
+        self.url = url
+        
     }
     
 }
