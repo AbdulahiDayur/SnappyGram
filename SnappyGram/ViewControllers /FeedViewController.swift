@@ -42,9 +42,6 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
         
         return cell!
     }
-    
-    
-    
 }
 
 
