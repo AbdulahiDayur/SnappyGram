@@ -147,6 +147,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PC-94-wB1">
                                         <rect key="frame" x="148" y="166.5" width="78" height="30"/>
                                         <state key="normal" title="Go To Feed"/>
+                                        <connections>
+                                            <action selector="doneTapped:" destination="O62-ia-SqS" eventType="touchUpInside" id="AC8-sx-Wk6"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
