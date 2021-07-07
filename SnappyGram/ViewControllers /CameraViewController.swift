@@ -38,7 +38,34 @@ class CameraViewController: UIViewController {
         // Photo Service stores the photo
         PhotoService.savePhoto(image: image) { (pct) in
             
+            DispatchQueue.main.async {
+                
+                // Upload progressBar
+                self.progressBar.alpha = 1
+                self.progressBar.progress = Float(pct)
+                
+                // Update label
+                self.progressLabel.text = "\(Int(pct * 100)) %"
+                self.progressLabel.alpha = 1
+                
+                if pct == 1 {
+                    self.doneButton.alpha = 1
+                }
+                
+            }
         }
     }
+    
+    @IBAction func doneTapped(_ sender: Any) {
+        
+        // Get reference to tabBarVC
+        let tabBarVC = self.tabBarController as? MainTabBarController
+        
+        if let tabBarVC = tabBarVC {
+            // Call go to feed
+            tabBarVC.goToFeed()
+        }
+    }
+    
 
 }
