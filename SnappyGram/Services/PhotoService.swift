@@ -48,8 +48,8 @@ class PhotoService {
         
         uploadTask.observe(.progress) { (taskSnapshot) in
             
-            let pct = Double(taskSnapshot.progress!.completedUnitCount) / Double(taskSnapshot.progress!.totalUnitCount) * 100
-            print("this is taskSnapshot: \(taskSnapshot)")
+            let pct = Double(taskSnapshot.progress!.completedUnitCount) / Double(taskSnapshot.progress!.totalUnitCount)
+            print("this is taskSnapshot: \(taskSnapshot.progress!)")
             print("this is pct: \(pct)")
             
             progressUpdate(pct)
