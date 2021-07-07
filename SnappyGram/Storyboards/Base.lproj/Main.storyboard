@@ -105,7 +105,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="300" id="ecw-uP-3zc">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Photo Cell" rowHeight="300" id="ecw-uP-3zc" customClass="PhotoCell" customModule="SnappyGram" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ecw-uP-3zc" id="0JE-Z1-qQf">
@@ -139,6 +139,11 @@
                                                 <constraint firstItem="TcI-5j-3UY" firstAttribute="leading" secondItem="0JE-Z1-qQf" secondAttribute="leadingMargin" constant="20" id="seo-xE-PYX"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="TcI-5j-3UY" id="g3a-wb-Awk"/>
+                                            <outlet property="photoImageView" destination="Ldf-gI-tmS" id="Gxs-4a-EKG"/>
+                                            <outlet property="usernameLabel" destination="5gI-mZ-crc" id="Iei-xw-1jS"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
