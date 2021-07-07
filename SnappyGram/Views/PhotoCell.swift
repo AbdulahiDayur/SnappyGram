@@ -34,7 +34,33 @@ class PhotoCell: UITableViewCell {
         usernameLabel.text = photo.byUsername
         dateLabel.text = photo.date
         
+        if photo.url == nil {
+            return
+        }
+        
         // Download image
+        let url = URL(string: photo.url!)
+        
+        if url == nil {
+            return
+        }
+        
+        // Download image asynchronously
+        let session = URLSession.shared
+        
+        let dataTask = session.dataTask(with: url!) { (data, response, error) in
+            
+            if error == nil && data != nil {
+                
+                let image = UIImage(data: data!)
+                
+                DispatchQueue.main.async {
+                    self.photoImageView.image = image
+                }
+            }
+        }
+        dataTask.resume()
+        
     }
 
 }
