@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F73833926969BE800CA6D9E /* ImageCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73833826969BE800CA6D9E /* ImageCacheService.swift */; };
 		0FB8191B268A427E008830FC /* PhotoUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB8191A268A427E008830FC /* PhotoUser.swift */; };
 		0FB8191E268A4397008830FC /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB8191D268A4397008830FC /* UserService.swift */; };
 		0FB81921268A8FD7008830FC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB81920268A8FD7008830FC /* Constants.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F73833826969BE800CA6D9E /* ImageCacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheService.swift; sourceTree = "<group>"; };
 		0FB8191A268A427E008830FC /* PhotoUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoUser.swift; sourceTree = "<group>"; };
 		0FB8191D268A4397008830FC /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		0FB81920268A8FD7008830FC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				0FB8191D268A4397008830FC /* UserService.swift */,
 				0FB81923268D1169008830FC /* LocalStorageService.swift */,
 				0FB8192C2691759E008830FC /* PhotoService.swift */,
+				0F73833826969BE800CA6D9E /* ImageCacheService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				0FB8192D2691759E008830FC /* PhotoService.swift in Sources */,
 				0FB8192A26917434008830FC /* Photo.swift in Sources */,
 				0FB81921268A8FD7008830FC /* Constants.swift in Sources */,
+				0F73833926969BE800CA6D9E /* ImageCacheService.swift in Sources */,
 				0FE214572686F12400F0D589 /* AppDelegate.swift in Sources */,
 				0FE214B12687BE0C00F0D589 /* CameraViewController.swift in Sources */,
 				0FE214592686F12400F0D589 /* SceneDelegate.swift in Sources */,
