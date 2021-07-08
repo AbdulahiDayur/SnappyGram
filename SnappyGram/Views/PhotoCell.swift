@@ -14,7 +14,7 @@ class PhotoCell: UITableViewCell {
     @IBOutlet var photoImageView: UIImageView!
     @IBOutlet var dateLabel: UILabel!
     
-    // This property will hold photo this cell is currently displaying
+    // This property will hold the photo this cell is currently displaying
     var photo: Photo?
     
 
@@ -31,6 +31,12 @@ class PhotoCell: UITableViewCell {
     
     func displayPhoto(photo: Photo) {
         
+        // Reset image
+        self.photoImageView.image = nil
+        
+        // Set photo property (keep track)
+        self.photo = photo
+        
         usernameLabel.text = photo.byUsername
         dateLabel.text = photo.date
         
@@ -45,6 +51,16 @@ class PhotoCell: UITableViewCell {
             return
         }
         
+        // Check if the image is in our image cache
+        if let cachedImage = ImageCacheService.getImage(url: photo.url!) {
+            
+            // Use the cached image
+            self.photoImageView.image = cachedImage
+            
+            // Return because we no longer need to download image
+            return
+        }
+        
         // Download image asynchronously
         let session = URLSession.shared
         
@@ -53,6 +69,14 @@ class PhotoCell: UITableViewCell {
             if error == nil && data != nil {
                 
                 let image = UIImage(data: data!)
+                
+                // Store image data in cache
+                ImageCacheService.saveImage(url: url!.absoluteString, image: image)
+                
+                // Check that the image data we downloaded matches the photo this cell is currently supposed to display
+                if url!.absoluteString != self.photo?.url {
+                    return
+                }
                 
                 DispatchQueue.main.async {
                     self.photoImageView.image = image
